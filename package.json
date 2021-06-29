@@ -1,0 +1,16 @@
+{
+  "name": "github-enterprise-server-versions",
+  "version": "1.0.0",
+  "description": "Retrieve the GitHub Enterprise Server (GHES) versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": "github:gr2m/github-enterprise-server-versions",
+  "keywords": [],
+  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
