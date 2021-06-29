@@ -1,5 +1,3 @@
-# 🚧 Work in progress - see [#1](https://github.com/gr2m/github-enterprise-server-versions/pull/1)
-
 # github-enterprise-server-versions
 
 > Retrieve the GitHub Enterprise Server (GHES) versions
