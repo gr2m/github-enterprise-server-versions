@@ -1,11 +1,10 @@
 name: Release
-on:
+"on":
   push:
     branches:
       - main
       - next
       - beta
-
 jobs:
   release:
     name: release
@@ -14,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: lts/*
       - run: npm ci
       - run: npx semantic-release
         env:
