@@ -3,7 +3,7 @@ module.exports = { getCurrentVersions };
 const fetch = require("node-fetch");
 
 const ENTERPRISE_VERSIONS_URL =
-  "https://raw.githubusercontent.com/github/docs/main/lib/enterprise-dates.json";
+  "https://raw.githubusercontent.com/github/docs/main/src/ghes-releases/lib/enterprise-dates.json";
 
 async function getCurrentVersions() {
   const response = await fetch(ENTERPRISE_VERSIONS_URL);
