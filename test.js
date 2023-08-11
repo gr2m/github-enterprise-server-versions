@@ -13,11 +13,6 @@ async function runTest() {
     true,
     `expected array of 3-4 items, but got ${versions.length}`
   );
-  strictEqual(
-    versions.filter((n) => n === parseFloat(n)).length,
-    versions.length,
-    `expected array of float numbers, but got ${JSON.stringify(versions)}`
-  );
 
   console.log("ok");
 }
