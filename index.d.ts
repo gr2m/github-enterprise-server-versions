@@ -1,1 +1,3 @@
-export function getCurrentVersions(): Promise<number[]>
+export function getCurrentVersions(): Promise<
+  [string, { releaseDate: string; deprecationDate: string }][]
+>;
