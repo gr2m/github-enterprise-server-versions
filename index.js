@@ -17,6 +17,6 @@ async function getCurrentVersions() {
 
       return true;
     })
-    .map(([version]) => parseFloat(version))
-    .sort();
+    .map(([version]) => version)
+    .sort((a, b) => parseInt(a.split(".")) > parseInt(b.split(".")));
 }

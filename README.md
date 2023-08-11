@@ -10,7 +10,7 @@ The list of past and current GitHub Enterprise Server versions can be found at h
 import { getCurrentVersions } from "github-enterprise-server-versions";
 
 const versions = await getCurrentVersions();
-// e.g. [ 2.22, 3, 3.1 ]
+// e.g. [ "2.22", "3", "3.1" ]
 ```
 
 ## License
