@@ -18,5 +18,15 @@ async function getCurrentVersions() {
       return true;
     })
     .map(([version]) => version)
-    .sort((a, b) => parseInt(a.split(".")) > parseInt(b.split(".")));
+    .sort((a,b) => {
+      const aComponents = a.split(".").map(Number);
+      const bComponents = b.split(".").map(Number);
+      for (let i = 0; i < Math.max(aComponents.length, bComponents.length); i++) {
+        const aElem = aComponents[i] || 0;
+        const bElem = bComponents[i] || 0;
+        if (aElem > bElem) return +1;
+        if (aElem < bElem) return -1;
+      }
+      return 0;
+    });
 }
