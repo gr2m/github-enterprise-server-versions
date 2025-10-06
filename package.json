@@ -17,5 +17,8 @@
       "next",
       "beta"
     ]
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
