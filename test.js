@@ -1,6 +1,6 @@
-const { strictEqual } = require("assert");
+import { strictEqual } from "assert"
 
-const { getCurrentVersions } = require("./index.js");
+import { getCurrentVersions } from "./index.js"
 
 runTest();
 

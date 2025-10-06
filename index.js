@@ -1,6 +1,4 @@
-module.exports = { getCurrentVersions };
-
-const fetch = require("node-fetch");
+export { getCurrentVersions };
 
 const ENTERPRISE_VERSIONS_URL =
   "https://raw.githubusercontent.com/github/docs/main/src/ghes-releases/lib/enterprise-dates.json";
