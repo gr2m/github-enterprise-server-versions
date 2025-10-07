@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Retrieve the GitHub Enterprise Server (GHES) versions",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node test.js"
   },
@@ -10,14 +11,14 @@
   "keywords": [],
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "ISC",
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  },
   "release": {
     "branches": [
       "main",
       "next",
       "beta"
     ]
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
